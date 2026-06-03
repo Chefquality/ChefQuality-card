@@ -250,6 +250,27 @@
     letter-spacing: 0.02em;
   }
 
+  /* Menu button */
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(201,168,76,0.1);
+    border-radius: 1px;
+    background: rgba(255,255,255,0.02);
+    text-decoration: none;
+    color: var(--cream);
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+  }
+
+  .menu-btn:hover {
+    border-color: rgba(201,168,76,0.4);
+    background: rgba(201,168,76,0.06);
+    transform: translateX(4px);
+  }
+
   /* QR Section */
   .qr-section {
     margin-top: 2rem;
@@ -394,6 +415,18 @@
         </div>
       </a>
     </ul>
+
+    <a href="https://chefquality.github.io/ChefQuality-card/menu.html" target="_blank" class="menu-btn">
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:16px;height:16px;fill:var(--gold);">
+          <path d="M8 5h8v2H8zm0 4h8v2H8zm0 4h5v2H8zm-3-9H3v14a2 2 0 002 2h14a2 2 0 002-2V3a2 2 0 00-2-2H5a2 2 0 00-2 2v1zm0 0h14v14H5V3z"/>
+        </svg>
+      </div>
+      <div class="contact-text">
+        <span class="contact-label">Our Menus</span>
+        <span class="contact-value">View Full Menu</span>
+      </div>
+    </a>
 
     <div class="divider" style="margin-top:1.8rem;">
       <div class="divider-line"></div>
