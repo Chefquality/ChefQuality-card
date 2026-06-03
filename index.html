@@ -383,20 +383,8 @@
 <script>
   // Build a vCard data URL — QR links to a page that opens contact info.
   // We embed all info as a vCard in a data URI so no hosting is needed.
-  const vcard = `BEGIN:VCARD
-VERSION:3.0
-FN:Jaedon Evans
-ORG:Chef Quality
-TEL;TYPE=CELL:+17072082519
-EMAIL:chefquality23@gmail.com
-URL;TYPE=Instagram:https://www.instagram.com/chefquality_
-URL;TYPE=Facebook:https://www.facebook.com/profile.php?id=61578154060346
-URL;TYPE=Yelp:https://yelp.to/sGu4S9tjjD
-NOTE:Quality's Cuisine & Catering
-END:VCARD`;
-
   new QRCode(document.getElementById("qrcode"), {
-    text: vcard,
+    text: "https://chefquality.github.io/ChefQuality-card",
     width: 180,
     height: 180,
     colorDark: "#0D0D0B",
@@ -406,5 +394,3 @@ END:VCARD`;
 </script>
 </body>
 </html>
-
-
